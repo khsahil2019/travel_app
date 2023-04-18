@@ -440,7 +440,15 @@ class _HomePageState extends State<HomePage> {
                           RoomBox(width, "room2.jpg", "Nanital", "Anand Road"),
                           RoomBox(width, "room3.jpg", "Delhi", "Kashmiri Gate"),
                           RoomBox(width, "room4.jpg", "Auli", "Sector 49"),
-                          View(width)
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HotelRooms()),
+                                );
+                              },
+                              child: View(width))
                         ],
                       ),
                     ),
