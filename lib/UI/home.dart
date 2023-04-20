@@ -5,7 +5,7 @@ import 'package:travel_app/UI/best_deal.dart';
 import 'package:travel_app/UI/hotel_rooms.dart';
 import 'package:travel_app/UI/search.dart';
 import 'dart:developer';
-
+import 'package:drop_shadow_image/drop_shadow_image.dart';
 import 'package:travel_app/widget.dart';
 
 import 'destination_wedding.dart';
@@ -183,43 +183,75 @@ class _HomePageState extends State<HomePage> {
                         Column(
                           children: [
                             Image.asset(
-                              "assets/img/img1.png",
-                              height: 70,
-                              width: 70,
+                              "assets/img/10.png",
+                              height: 100,
+                              width: 100,
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 10,
                             ),
-                            Text("Exclusive Trip",
-                                style: TextStyle(fontFamily: "Sail"))
+                            Text("Best Deals", style: TextStyle())
                           ],
                         ),
                         Column(
                           children: [
                             Image.asset(
-                              "assets/img/img2.png",
-                              height: 70,
-                              width: 70,
+                              "assets/img/7.png",
+                              height: 110,
+                              width: 110,
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 10,
                             ),
-                            Text("Lots of Choice",
-                                style: TextStyle(fontFamily: "Sail"))
+                            Text("Exotic Places", style: TextStyle())
                           ],
                         ),
                         Column(
                           children: [
                             Image.asset(
-                              "assets/img/img3.png",
-                              height: 70,
-                              width: 70,
+                              "assets/img/9.png",
+                              height: 100,
+                              width: 100,
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 10,
                             ),
-                            Text("professional guide",
-                                style: TextStyle(fontFamily: "Sail"))
+                            Text("Destination Wedding",
+                                textAlign: TextAlign.center, style: TextStyle())
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset(
+                              "assets/img/8.png",
+                              height: 100,
+                              width: 100,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text("Hotels Rooms", style: TextStyle())
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset(
+                              "assets/img/6.png",
+                              height: 100,
+                              width: 100,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text("Flights", style: TextStyle())
                           ],
                         ),
                       ],
